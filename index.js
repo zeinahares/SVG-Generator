@@ -40,4 +40,4 @@ const questions = [
 ];
 
 inquirer.prompt(questions)
-        .then();
+        .then((data) => console.log(data));
