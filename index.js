@@ -14,6 +14,7 @@
 // THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 const inquirer = require('inquirer');
+const generateSVG = require('./lib/generateSVG.js');
 
 const questions = [
     {
@@ -40,4 +41,5 @@ const questions = [
 ];
 
 inquirer.prompt(questions)
-        .then((data) => console.log(data));
+        .then((data) => generateSVG(data))
+        .catch((err) => console.log(err))
