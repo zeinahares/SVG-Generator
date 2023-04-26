@@ -13,17 +13,31 @@
 // WHEN I open the `logo.svg` file in a browser
 // THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
-// The application must include Triangle, Circle, and Square classes, as well as tests for each of these classes using Jest. 
-// While not a requirement, it is recommended that you place any common functionality and 
-// properties shared by the Triangle, Circle, and Square classes in a parent Shape class 
-// and use inheritance to reuse the code in the child classes.
+const inquirer = require('inquirer');
 
-// Each shape class should be tested for a render() method that returns a string for the corresponding SVG file with the given shape color.
+const questions = [
+    {
+        type: 'input',
+        message: "What text would you like in your SVG? (up to 3 letters)",
+        name: 'letters',
+      },
+    {
+        type: 'input',
+        message: "What color do you want your text? Enter a color keyword (OR a hexadecimal number)",
+        name: 'letters_color',
+      },
+      {
+        type: 'list',
+        message: "Choose your shape.",
+        name: 'shape',
+        choices: ['Square','Triangle','Circle'],
+      },
+      {
+        type: 'input',
+        message: "What color do you want your shape? Enter a color keyword (OR a hexadecimal number)",
+        name: 'shape_color',
+      },
+];
 
-// The following example test should pass:
-
-// const shape = new Triangle();
-// shape.setColor("blue");
-// expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-// You may need to add additional files in the lib folder for handling user input, 
-// writing to a file, etc. Writing tests for these additional files is optional.
+inquirer.prompt(questions)
+        .then();
