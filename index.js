@@ -9,7 +9,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: "What color do you want your text? Enter a color keyword (OR a hexadecimal number)",
+    message: "What color do you want your text? Enter a color keyword (OR a hexadecimal number starting with #)",
     name: 'letters_color',
   },
   {
@@ -20,7 +20,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: "What color do you want your shape? Enter a color keyword (OR a hexadecimal number)",
+    message: "What color do you want your shape? Enter a color keyword (OR a hexadecimal number starting with #)",
     name: 'shape_color',
   },
 ];
