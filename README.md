@@ -22,7 +22,7 @@ You will need node.js installed on your computer. Once that's installed, you nee
 After installing the program, you will be prompted with a few quesitons. First, you can enter text for your logo up to 3 letters. Press enter to submit your answers. Then you will be prompted for a color for the text. You can enter a known/unobscure color keyword like 'blue' (there are limited keywords), or you can enter a color's hexadecimal value, and make sure to include # before the start of the value. Now you can choose any color you want that has ever existed! Next, you can choose from a list of provided shapes, and then their color in the same format as before. Voila! Your new SVG logo has been created with the name 'logo.svg'. You can open it in your browser (or other supproting programs) to see the full vector image. 
 
 ## Walkthrough Video
-
+https://drive.google.com/file/d/1RIejrgRtfciId4MoSduOt0Xg-UizwquD/view
 
 ## License
 MIT License https://opensource.org/licenses/MIT
